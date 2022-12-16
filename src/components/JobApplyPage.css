@@ -134,6 +134,10 @@ li::marker {
     padding: 0 2rem;
   }
 
+  .job-apply-box {
+    align-items: start;
+  }
+
   .job-info-box {
     padding: 2.5rem;
   }
