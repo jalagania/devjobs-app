@@ -1,0 +1,80 @@
+.jobs-container {
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 10rem 0 5.5rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem 3rem;
+}
+
+.job-box {
+  padding: 0 0 3.5rem 3rem;
+  background-color: var(--color-box-bg);
+  border-radius: 0.6rem;
+}
+
+.job-logo-bg {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 2.4rem;
+  margin-top: -2.5rem;
+  border-radius: 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.job-info {
+  margin-bottom: 1.6rem;
+  color: var(--color-main-text);
+
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.job-position {
+  width: fit-content;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--color-heading);
+  margin-bottom: 1.7rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.job-position:hover {
+  color: var(--color-heading-hover);
+}
+
+.job-company {
+  color: var(--color-main-text);
+  margin-bottom: 4.5rem;
+}
+
+.job-location {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--color-blue);
+}
+
+.btn-load {
+  display: block;
+  margin: 0 auto 5.5rem auto;
+}
+
+@media (max-width: 768px) {
+  .jobs-container {
+    padding: 10rem 2rem 5.5rem 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 425px) {
+  .jobs-container {
+    padding: 6rem 2rem 5.5rem 2rem;
+    grid-template-columns: 1fr;
+  }
+}

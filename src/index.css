@@ -1,13 +1,86 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --color-bg: #f2f2f2;
+  --color-box-bg: white;
+  --color-heading: #19202d;
+  --color-input: #19202d;
+  --color-checkbox: rgba(25, 32, 45, 0.1);
+  --color-button-website: rgba(89, 100, 224, 0.1);
+  --color-button-website-text: #5964e0;
+  --color-button-website-hover: rgba(89, 100, 224, 0.35);
+  --color-svg-fill: #6e8098;
+  --color-heading-hover: #6e8098;
+  --color-main-text: #6e8098;
+  --color-blue: #5964e0;
+  --color-blue-hover: #939bf4;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.dark-theme {
+  --color-bg: #121721;
+  --color-box-bg: #19202d;
+  --color-heading: white;
+  --color-input: white;
+  --color-checkbox: #313743;
+  --color-button-website: rgba(255, 255, 255, 0.1);
+  --color-button-website-text: white;
+  --color-button-website-hover: rgba(255, 255, 255, 0.35);
+  --color-svg-fill: white;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--color-bg);
+}
+
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  font-weight: bold;
+  color: white;
+  padding: 1.5rem 3.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+button.blue {
+  background-color: var(--color-blue);
+}
+
+button.blue:hover {
+  background-color: var(--color-blue-hover);
+}
+
+button:active {
+  scale: 0.96;
 }
