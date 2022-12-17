@@ -148,9 +148,9 @@ input::placeholder {
   }
 
   .location-check-wrapper {
-    width: 15rem;
+    width: 33rem;
     padding: 2.5rem;
-    margin: 23rem auto 0 auto;
+    margin: 15rem auto 0 auto;
     background-color: var(--color-box-bg);
 
     border-radius: 0.6rem;
